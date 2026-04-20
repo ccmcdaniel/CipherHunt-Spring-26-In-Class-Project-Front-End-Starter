@@ -15,7 +15,7 @@ from screens.settings.settings import SettingsScreen
 
 # Register the family under an alias (e.g., 'IBMPlex')
 
-scale = 1
+scale = 0.75
 Window.size = (414 * scale, 917 * scale)
 Window.clearcolor = (1, 1, 1, 1)
 

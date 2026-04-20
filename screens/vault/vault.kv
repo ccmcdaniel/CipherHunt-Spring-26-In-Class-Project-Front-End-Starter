@@ -2,5 +2,38 @@
 #:import utils kivy.utils
 
 <VaultScreen>:
-    Label:
-        text: "Vault Screen"
+    BoxLayout:
+        orientation: 'vertical'
+        padding: 60
+
+        BoxLayout:
+            orientation: 'vertical'
+            spacing: 5
+
+            canvas.before:
+                Color:
+                    rgba: utils.get_color_from_hex("#384f77")
+                RoundedRectangle:
+                    size: self.size
+                    pos: self.pos
+                    radius: [8]
+
+
+            Label:
+                text: "Title"
+
+            # Line ???
+
+            Label:
+                text: "riddle/clue"
+
+            TextInput:
+                hint_text: "key"
+            
+            Button:
+                text: "Submit"
+
+            Button:
+                text: "Fetch Key"
+
+        
